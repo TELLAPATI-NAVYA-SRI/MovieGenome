@@ -1,0 +1,245 @@
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  padding: 15px 40px;
+  border-bottom: 2px solid #ddd;
+  border-radius: 10px;
+  margin: 20px;
+  background: #7157b3;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #003399;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  margin: 0 15px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a.active {
+  text-decoration: underline;
+}
+
+/* Search Bar */
+.search-bar {
+  padding: 8px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  width: 220px;
+  padding-left: 15px;
+  font-size: 14px;
+}
+
+/* Sections */
+.section-title {
+  font-size: 24px;
+  margin: 40px 30px 10px;
+  font-weight: bold;
+}
+
+/* Movies Grid */
+
+.movies-container {
+  display: flex;
+  flex-wrap: nowrap;     /* Don't wrap to the next line */
+  gap: 20px;
+  overflow: hidden;  
+  padding :80px;    /* Hide any overflow */
+}
+
+.movie-card {
+  flex: 0 0 auto;          /* 🔥 Prevent shrinking */
+  width: 200px;            /* Or whatever width works for you */
+}
+.moviesList{
+    padding-top: 100px;
+    align-items: center;
+}
+/* Movies List Header */
+.movies-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin: 30px 0 10px;
+  }
+  
+  /* Section Title */
+  .section-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* View All Link */
+  .view-all {
+    font-size: 16px;
+    color: #6A0DAD; /* Purple accent */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .view-all:hover {
+    text-decoration: underline;
+  }
+  
+.movie-card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 200px;
+  color: black;
+  transition: transform 0.3s ease-in-out;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Moods */
+.moods-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 20px;
+  padding: 25px 40px;
+  margin: 40px;
+}
+
+.mood-card {
+  width: 130px;
+  text-align: center;
+  background: white;
+  color: black;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.mood-card img {
+  width: 80%;
+  margin-bottom: 8px;
+  border-radius: 50%;
+}
+
+.mood-card:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .movies-container {
+    gap: 10px;
+  }
+}
+
+.mood-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  margin-top: 20px; /* Add padding so the content is pushed down */
+  z-index: 1000;
+}
+
+.mood-modal-content {
+  position: relative;
+  width: 90%;
+  max-height: 90vh;
+  background-color: #111;
+  color: white;
+  padding: 40px 20px 20px 20px;
+  border-radius: 10px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+/* Close button perfectly centered ABOVE the modal */
+.close-button {
+  
+  position: absolute;
+ 
+  left: 50%;
+  transform: translateX(-100%);
+  background-color: red;
+  color: white;
+  border: none;
+
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1010; /* One layer above the modal content */
+}
+
+.mood-modal-content h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+
+
+.movies-container {
+ 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.movie-card {
+  width: 200px;
+  text-align: center;
+  color: white;
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.movies-container-horizontal {
+  
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 100px ;
+}
+
+.movies-container-horizontal::-webkit-scrollbar {
+  height: 8px;
+}
+
+.movies-container-horizontal::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.movies-container-horizontal::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+

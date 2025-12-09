@@ -1,0 +1,84 @@
+.all-movies-container {
+    padding-top: 100px;
+    text-align: center;
+    
+    min-height: 100vh;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: white;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    background: #7157b3;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .nav-links a:hover {
+    color: white;
+  }
+  
+  /* Movies Grid */
+  .movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 100px;
+
+  }
+ 
+  .movie-card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+  
+  /* Movie Card */
+  .movie-card {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: black;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .movie-card img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .movie-card:hover {
+    transform: scale(1.05);
+  }
+  .pagination {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .pagination button {
+    margin: 0 10px;
+    padding: 5px 10px;
+  }
+  
+  
